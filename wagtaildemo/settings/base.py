@@ -15,9 +15,9 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'wagtaildemo',
-        'USER': 'postgres',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'dev.db',
+        'USER': '',
         'PASSWORD': '',
         'HOST': '',  # Set to empty string for localhost.
         'PORT': '',  # Set to empty string for default.
@@ -36,11 +36,11 @@ ALLOWED_HOSTS = []
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'Europe/London'
+TIME_ZONE = 'Asia/Shanghai'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-gb'
+LANGUAGE_CODE = 'zh_CN'
 
 SITE_ID = 1
 
@@ -142,7 +142,8 @@ INSTALLED_APPS = (
     # 'django.contrib.sites',  # Wagtail uses its own site management logic
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
+    'gunicorn',
     'south',
     'compressor',
     'taggit',
