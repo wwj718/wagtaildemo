@@ -9,9 +9,10 @@ fork from [wagtaildemo](https://github.com/torchbox/wagtaildemo)
 *  cd wagtaildemo
 *  sudo apt-get install libpq-dev python-dev
 *  sudo apt-get install libxml2-dev libxslt-dev zlib1g-dev
+*  64位系统:sudo apt-get install python-dev libjpeg-dev libfreetype6-dev zlib1g-dev
 *  pip install -r requirements/dev.txt -i http://pypi.douban.com/simple
 *  python manage.py run_gunicorn --workers=2 -b 0.0.0.0:8000
-*  64位系统:sudo apt-get install python-dev libjpeg-dev libfreetype6-dev zlib1g-dev
+
 
 ##与原版本的不同之处
 *  数据库默认为sqlite3，开箱可用
