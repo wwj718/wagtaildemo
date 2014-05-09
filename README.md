@@ -13,7 +13,6 @@ fork from [wagtaildemo](https://github.com/torchbox/wagtaildemo)
 *  pip install -r requirements/dev.txt -i http://pypi.douban.com/simple
 *  python manage.py run_gunicorn --workers=2 -b 0.0.0.0:8000
 
-
 ##与原版本的不同之处
 *  数据库默认为sqlite3，开箱可用
 *  设置语言环境，默认中文
